@@ -36,7 +36,7 @@ try:
 except ImportError:
     pass
 
-import widgets
+from . import widgets
 
 # Test to see if we are in an IPython session.
 ipython = None

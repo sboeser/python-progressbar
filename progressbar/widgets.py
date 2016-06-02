@@ -219,7 +219,7 @@ class Attribute(Widget):
 
     def update(self, pbar):
         try:
-          if isinstance(self.attr_name, basestring) or len(self.attr_name) == 1:
+          if isinstance(self.attr_name, str) or len(self.attr_name) == 1:
             # If attr_name is just a string or a single item,
             # use it as the key as is
             format_vars = (pbar.attr[self.attr_name],)
